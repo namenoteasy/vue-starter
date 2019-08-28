@@ -1,4 +1,9 @@
-
+const path = require('path')
+if (process.env.NODE_ENV === 'development') {
+  require(path.resolve('src/core/compiler/dev.js'))
+} else {
+  require(path.resolve('src/core/compiler/build.js'))
+}
 
 module.exports = {
 
@@ -19,6 +24,11 @@ module.exports = {
             // mockRouter
         },//require('_mock/index'),
     },
+    pages: {
+        index: {
+          entry: 'src/core/main.ts'
+        }
+      },
     chainWebpack: config => {
 
         /*
