@@ -18,7 +18,7 @@
     "date-fns": "^1.29.0",
     "echarts": "^4.2.0-rc.2",
     "font-awesome": "^4.7.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.21",
     "mockjs": "^1.0.1-beta3",
     "moment": "^2.23.0",
     "numeral": "^2.0.6",
